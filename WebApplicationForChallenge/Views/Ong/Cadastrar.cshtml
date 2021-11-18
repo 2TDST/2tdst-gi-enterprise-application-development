@@ -1,0 +1,26 @@
+﻿@model Ong
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+@section Links {
+    <a asp-action="index">Lista de Ongs</a>
+}
+
+<h1>Cadastro de Ongs</h1>
+
+<form asp-action="cadastrar">
+    <partial name="_Form" />
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a asp-action="index" class="btn btn-dark">Ongs</a>
+</form>
+
+@if (TempData["msg"] != null)  
+    {  
+        <script type="text/javascript">  
+            window.onload = function () {  
+                alert("@TempData["msg"]");  
+            };  
+        </script>  
+    }

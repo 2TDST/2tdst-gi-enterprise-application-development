@@ -1,0 +1,78 @@
+﻿@model List<Ong>
+
+@{
+    ViewData["Title"] = "Lista de Ongs";    
+}
+
+<h1>Estabelecimentos</h1>
+
+<mensagem texto="@TempData["msg"]"></mensagem>
+
+<form class="form-inline mb-3">
+    <input type="text" name="nomeBusca" class="form-control mr-2" placeholder="Digite o nome"/>
+    <input type="submit" value="Buscar" class="btn btn-success" />
+</form>
+
+@if (Model.Count == 0)
+{ 
+    <mensagem texto="Nenhum registro encontrado" class="alert alert-danger"></mensagem>
+}
+
+<a asp-action="cadastrar">Cadastrar</a>
+<table class="table">
+    <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Ramo de Atuação</th>
+        <th>Porte</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Codigo</td>
+            <td>@item.Nome</td>
+            <td>@item.Ramo</td>
+            <td>@item.Porte</td>   
+            <td>@item.Endereco</td>
+            <td>@item.Telefone</td>
+            <td>
+                <a asp-route-id="@item.Codigo" asp-action="editar" class="btn btn-sm btn-primary">Editar</a>
+                <!-- Button trigger modal -->
+                <button onclick="idOng.value = @item.Codigo" type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">
+                    Remover
+                </button>
+            </td>
+        </tr>
+    }
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Deseja realmente apagar o cadastro?
+            </div>
+            <div class="modal-footer">
+                <form asp-action="remover">
+                    <input type="hidden" name="id" id="idOng"/>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button type="submit" class="btn btn-danger">Sim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

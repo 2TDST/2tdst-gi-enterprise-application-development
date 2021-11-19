@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\allan\\Source\\Repos\\Enterprise-CPS\\WebApplicationForChallenge\\WebApplicationForChallenge.csproj": {}
+    "/Users/diteixeira/FIAP-REPOS/Enterprise/WebApplicationForChallenge/WebApplicationForChallenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\allan\\Source\\Repos\\Enterprise-CPS\\WebApplicationForChallenge\\WebApplicationForChallenge.csproj": {
+    "/Users/diteixeira/FIAP-REPOS/Enterprise/WebApplicationForChallenge/WebApplicationForChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\allan\\Source\\Repos\\Enterprise-CPS\\WebApplicationForChallenge\\WebApplicationForChallenge.csproj",
+        "projectUniqueName": "/Users/diteixeira/FIAP-REPOS/Enterprise/WebApplicationForChallenge/WebApplicationForChallenge.csproj",
         "projectName": "WebApplicationForChallenge",
-        "projectPath": "C:\\Users\\allan\\Source\\Repos\\Enterprise-CPS\\WebApplicationForChallenge\\WebApplicationForChallenge.csproj",
-        "packagesPath": "C:\\Users\\allan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\allan\\Source\\Repos\\Enterprise-CPS\\WebApplicationForChallenge\\obj\\",
+        "projectPath": "/Users/diteixeira/FIAP-REPOS/Enterprise/WebApplicationForChallenge/WebApplicationForChallenge.csproj",
+        "packagesPath": "/Users/diteixeira/.nuget/packages/",
+        "outputPath": "/Users/diteixeira/FIAP-REPOS/Enterprise/WebApplicationForChallenge/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\allan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/diteixeira/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,21 +40,25 @@
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[3.1.16, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.5, )"
+              "version": "[3.1.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -77,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

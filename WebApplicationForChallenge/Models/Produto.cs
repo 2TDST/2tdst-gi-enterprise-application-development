@@ -1,19 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
-
 
 namespace WebApplicationForChallenge.Models
 {
-   
-        [Table("Tbl_Produto")]
+
+    [Table("Tbl_Produto")]
         public class Produto
         {
-            [Column("Id")]
+            [Column("Id"), HiddenInput]
             public int ProdutoId { get; set; }
 
             [Required, MaxLength(80)]

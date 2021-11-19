@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webapplicationforchallenge:
+    image: ${DOCKER_REGISTRY-}webapplicationforchallenge
+    build:
+      context: .
+      dockerfile: WebApplicationForChallenge/Dockerfile

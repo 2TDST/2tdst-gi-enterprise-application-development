@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{4BE3BBE0-0F92-42BA-B61D-9A9E7DA52B24}|Default">
+  <MonoDevelop.Ide.ItemProperties.WebApplicationForChallenge PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplicationForChallenge/Program.cs">
+    <Files>
+      <File FileName="WebApplicationForChallenge/Startup.cs" Line="1" Column="1" />
+      <File FileName="WebApplicationForChallenge/appsettings.json" Line="1" Column="1" />
+      <File FileName="WebApplicationForChallenge/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="WebApplicationForChallenge" expanded="True">
+            <Node name="WebApplicationForChallenge" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Persistencia" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
